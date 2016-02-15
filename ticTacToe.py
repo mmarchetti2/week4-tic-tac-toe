@@ -18,50 +18,36 @@ def checkWinner(board, player):
         if board['mid-L'] == player:
             if board['low-L'] == player:
                 return True
-        else:
-            return False
     if board['top-M'] == player:
         if board['mid-M'] == player:
             if board['low-M'] == player:
                 return True
-        else:
-            return False
     if board['top-R'] == player:
         if board['mid-R'] == player:
             if board['low-R'] == player:
                 return True
-        else:
-            return False
     if board['top-L'] == player:
         if board['top-M'] == player:
             if board['top-R'] == player:
                 return True
-        else:
-            return False
     if board['mid-L'] == player:
         if board['mid-M'] == player:
             if board['mid-R'] == player:
                 return True
-        else:
-            return False
     if board['low-L'] == player:
         if board['low-M'] == player:
             if board['low-R'] == player:
                 return True
-        else:
-            return False
     if board['top-L'] == player:
         if board['mid-M'] == player:
             if board['low-R'] == player:
                 return True
-        else:
-            return False
     if board['top-R'] == player:
         if board['mid-M'] == player:
             if board['low-L'] == player:
                 return True
-        else:
-            return False
+    else:
+        return False
     # TO DO #################################################################
     # Write code in this function that checks the tic-tac-toe board          #
     # to determine if the player stored in variable 'player' currently      #
@@ -96,4 +82,3 @@ def startGame(startingPlayer, board):
             turn = 'X' #The above 3 lines switches between X and O's turn
         
     printBoard(board) #Prints the board
-    

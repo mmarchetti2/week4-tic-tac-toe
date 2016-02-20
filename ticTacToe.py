@@ -18,31 +18,31 @@ def checkWinner(board, player):
         if board['mid-L'] == player:
             if board['low-L'] == player:
                 return True
-    if board['top-M'] == player:
+    elif board['top-M'] == player:
         if board['mid-M'] == player:
             if board['low-M'] == player:
                 return True
-    if board['top-R'] == player:
+    elif board['top-R'] == player:
         if board['mid-R'] == player:
             if board['low-R'] == player:
                 return True
-    if board['top-L'] == player:
+    elif board['top-L'] == player:
         if board['top-M'] == player:
             if board['top-R'] == player:
                 return True
-    if board['mid-L'] == player:
+    elif board['mid-L'] == player:
         if board['mid-M'] == player:
             if board['mid-R'] == player:
                 return True
-    if board['low-L'] == player:
+    elif board['low-L'] == player:
         if board['low-M'] == player:
             if board['low-R'] == player:
                 return True
-    if board['top-L'] == player:
+    elif board['top-L'] == player:
         if board['mid-M'] == player:
             if board['low-R'] == player:
                 return True
-    if board['top-R'] == player:
+    elif board['top-R'] == player:
         if board['mid-M'] == player:
             if board['low-L'] == player:
                 return True
